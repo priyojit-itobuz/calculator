@@ -21,6 +21,18 @@ showResult.addEventListener("click",function(){
         {
             screenValue = Number(operand1) + Number(operand2)
         }
+        else if(items === "*")
+        {
+            screenValue = Number(operand1) * Number(operand2)
+        }
+        else if(items === "/")
+            {
+                screenValue = Number(operand1) / Number(operand2)
+            }
+            else if(items === "-")
+                {
+                    screenValue = Number(operand1) - Number(operand2)
+                }    
         else {
             screenValue = items;
         }
@@ -32,14 +44,14 @@ operations.forEach((item) => {
   item.addEventListener("click", function (e) {
     symbol = e.target.innerHTML;
     stack.push(symbol);
-    // inputValue.value += symbol;
+    inputValue.value = symbol;
   });
 });
 
 allButton.forEach((buttonItem) => {
   buttonItem.addEventListener("click", function (e) {
-    inputValue.value += e.target.innerHTML;
-    // stack.push(inputValue.value);
+    inputValue.value = e.target.innerHTML;
+
     if(operand1 === "")
     {
         operand1 = inputValue.value;
