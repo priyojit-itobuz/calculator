@@ -1,0 +1,34 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-number {
+  width: 86px;
+  font-size: 20px !important;
+  padding: 11px !important;
+}
+
+.calculator-section {
+  width: 400px;
+  background-color: pink;
+  padding: 20px;
+}
+
+.calc-text {
+  margin-bottom: 20px;
+}
+
+.user-input {
+  width: 100%;
+  font-size: 2rem;
+  padding: 3px;
+  text-align: end;
+  color: black;
+  outline: none;
+  word-wrap: break-word;
+  word-break: break-all;
+}/*# sourceMappingURL=style.css.map */
