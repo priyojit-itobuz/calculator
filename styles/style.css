@@ -14,8 +14,20 @@ body {
   max-height: 780px;
 }
 
+.toggleButton {
+  background-color: #9D9EA1;
+  color: #fff;
+}
+.toggleButton:hover {
+  background-color: #cdcfd3;
+}
+
+button {
+  color: #fff;
+}
+
 .calculator {
-  background-color: #A6CDC6;
+  background-color: #1F1F1F;
   width: 310px;
   margin: 50px auto;
   display: flex;
@@ -28,7 +40,7 @@ body {
 }
 .calculator .calculator-input {
   width: 90%;
-  background-color: white;
+  background-color: #fff;
   text-align: end;
   color: black;
   font-weight: 500;
