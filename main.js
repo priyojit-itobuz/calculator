@@ -17,6 +17,7 @@ let operatorSymbol = "";
 
 calculateButton.addEventListener("click", () => {
   let answer = 0;
+  //+32 to delete + sign nd get 32 only
   operand2 = operand2.toString().slice(1);
   switch (operatorSymbol) {
     case "+":
@@ -55,14 +56,7 @@ clearButton.addEventListener("click", () => {
 });
 
 deleteButton.addEventListener("click", () => {
-   if(inputBox.value === 'AC')
-   {
-    inputBox.value = "";
-    operand1 = 0;
-    operand2 = 0;
-    operatorSymbol = "";
-   }
-   else if(inputBox.value === 'Infinity' || inputBox.value === '-Infinity' || inputBox.value === 'NaN')
+   if(inputBox.value === 'Infinity' || inputBox.value === '-Infinity' || inputBox.value === 'NaN' || inputBox.value === 'AC')
    {
     inputBox.value = "";
     operand1 = 0;
