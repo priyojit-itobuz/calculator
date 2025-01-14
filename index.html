@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Calculator</h1>
-    <div class="calculator-section">
-        <div class="calc-text">
-            <input type="text" class="user-input" id="input-value">
+    <h1 class="text-center m-0 pt-4">Calculator</h1>
+    <section class="calculator px-3 py-4 rounded-2">
+        <input type="text" class="calculator-input mx-auto my-3 py-2 px-2 rounded-1 border-0 outline-0" id="inputBox">
+        <div class="operation-buttons gap-2 fw-bold">
+            <button class="btn btn-danger p-2 text-center " id="clearButton">AC</button>
+            <button class="btn btn-warning p-2 text-center" id="toggleButton">-/+</button>
+            <button class="btn btn-warning p-2 text-center" id="percentageButton">%</button>
+            <button class="btn btn-warning p-2 text-center" id="deleteButton">C</button>
+            <button class="btn btn-primary p-2 text-center operand-button">7</button>
+            <button class="btn btn-primary p-2 text-center operand-button">8</button>
+            <button class="btn btn-primary p-2 text-center operand-button">9</button>
+            <button class="btn btn-primary p-2 text-center operator-button">/</button>
+            <button class="btn btn-primary p-2 text-center operand-button">4</button>
+            <button class="btn btn-primary p-2 text-center operand-button">5</button>
+            <button class="btn btn-primary p-2 text-center operand-button">6</button>
+            <button class="btn btn-primary p-2 text-center operator-button">*</button>
+            <button class="btn btn-primary p-2 text-center operand-button">1</button>
+            <button class="btn btn-primary p-2 text-center operand-button">2</button>
+            <button class="btn btn-primary p-2 text-center operand-button">3</button>
+            <button class="btn btn-primary p-2 text-center operator-button">-</button>
+            <button class="btn btn-primary p-2 text-center operand-button">0</button>
+            <button class="btn btn-primary p-2 text-center" id="decimalPoint">.</button>
+            <button class="btn btn-primary p-2 text-center operator-button">+</button>
+            <button class="btn btn-success p-2 text-center" id="calculateButton">=</button>
         </div>
-        <div class="d-flex flex-column gap-3 justify-content-around mt-2">
-            <div class="d-flex gap-3">
-                <button type="button" class="btn btn-primary btn-number operations" >AC</button>
-                <button type="button" class="btn btn-primary btn-number operations">-/+</button>
-                <button type="button" class="btn btn-primary btn-number operations">%</button>
-                <button type="button" class="btn btn-primary btn-number">C</button>
-            </div>
-            <div class="d-flex gap-3">
-                <button type="button" class="btn btn-primary btn-number numbers">7</button>
-                <button type="button" class="btn btn-primary btn-number numbers">8</button>
-                <button type="button" class="btn btn-primary btn-number numbers">9</button>
-                <button type="button" class="btn btn-primary btn-number operations">/</button>
-            </div>
-            <div class="d-flex gap-3"> 
-                <button type="button" class="btn btn-primary btn-number numbers">4</button>
-                <button type="button" class="btn btn-primary btn-number numbers">5</button>
-                <button type="button" class="btn btn-primary btn-number numbers">6</button>
-                <button type="button" class="btn btn-primary btn-number operations">*</button>
-            </div>
-            <div class="d-flex gap-3">
-                <button type="button" class="btn btn-primary btn-number numbers">1</button>
-                <button type="button" class="btn btn-primary btn-number numbers">2</button>
-                <button type="button" class="btn btn-primary btn-number numbers">3</button>
-                <button type="button" class="btn btn-primary btn-number operations">-</button>
-            </div>
-            <div class="d-flex gap-3"> 
-                <button type="button" class="btn btn-primary btn-number numbers">0</button>
-                <button type="button" class="btn btn-primary btn-number ">.</button>
-                <button type="button" class="btn btn-primary btn-number operations">+</button>
-                <button type="button" class="btn btn-primary btn-number" id="showResult">=</button>
-            </div>
+        <div class="power-buttons mt-2">
+            <button class="btn btn-primary p-2 text-center " id="squareButton">X<sup>2</sup></button>
+            <button class="btn btn-primary p-2 text-center " id="cubeButton">X<sup>3</sup></button>
+            <button class="btn btn-primary p-2 text-center operator-button">^</button>
         </div>
-    </div>
+    </section>
     <script src="main.js"></script>
 </body>
+
 </html>
